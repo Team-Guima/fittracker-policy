@@ -1,8 +1,8 @@
 # fittracker-policy
 
-Site estático do FitTracker (Team Guima), publicado pelo GitHub Pages.
+Site estático do Diário Team Guima (Team Guima Journal), publicado pelo GitHub Pages.
 
-- Política de privacidade v1.4 (pt-BR e EN): https://team-guima.github.io/fittracker-policy/
+- Política de privacidade v1.5 (pt-BR e EN): https://team-guima.github.io/fittracker-policy/
   - English: https://team-guima.github.io/fittracker-policy/#en
 - Suporte / Support: https://team-guima.github.io/fittracker-policy/suporte/
 

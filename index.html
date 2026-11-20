@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <link rel="canonical" href="https://team-guima.github.io/fittracker-policy/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Política de Privacidade — FitTracker | Privacy Policy</title>
-  <meta name="description" content="Política de privacidade do FitTracker (Team Guima): seus dados ficam no aparelho, sem conta, sem anúncios e sem rastreamento. Privacy policy for FitTracker.">
+  <title>Política de Privacidade — Diário Team Guima | Privacy Policy — Team Guima Journal</title>
+  <meta name="description" content="Política de privacidade do Diário Team Guima: seus registros e passos ficam no aparelho, sem conta e sem servidor próprio. Os vídeos tocam pelo YouTube. Privacy policy for Team Guima Journal: your records and steps stay on your device, with no account and no servers of ours. Videos play through YouTube.">
   <style>
     :root { color-scheme: light; }
     * { box-sizing: border-box; }
@@ -27,7 +27,7 @@
 <body>
   <main>
     <header>
-      <h1>FitTracker — Política de Privacidade / Privacy Policy</h1>
+      <h1>Diário Team Guima — Política de Privacidade / Privacy Policy</h1>
       <nav aria-label="Idioma / Language">
         <a href="#pt-br" hreflang="pt-BR">Português (BR)</a>
         <a href="#en" hreflang="en">English</a>
@@ -35,30 +35,49 @@
     </header>
 
     <article id="pt-br" lang="pt-BR">
-    <h2>Política de Privacidade — FitTracker</h2>
-    <p class="updated">Última atualização: 19 de outubro de 2026</p>
-      <p>O FitTracker é um app da Team Guima (<code>com.teamguima.fittracker</code>) para acompanhar hábitos: água, treinos, dieta, refeições livres e contadores criados por você.</p>
+    <h2>Política de privacidade — Diário Team Guima</h2>
+    <p class="updated">Última atualização: 20 de novembro de 2026</p>
+      <p>O Diário Team Guima (<code>com.teamguima.fittracker</code>) é um app da Team Guima, publicado por Rafael Rabelo, pessoa física, para acompanhar hábitos: água, treinos, dieta, refeições livres, contadores criados por você e passos. Ele também tem vídeos da Team Guima.</p>
+      <p>O app se chamava FitTracker.</p>
     <section id="pt-1">
-      <h3>1. Seus dados ficam no seu aparelho.</h3>
-      <p>Tudo o que você registra fica salvo em um banco de dados local (SQLite) no seu dispositivo. O FitTracker não tem conta, login nem servidores próprios, e não envia seus registros para a Team Guima.</p>
+      <h3>1. Seus registros ficam no seu aparelho.</h3>
+      <p>Tudo o que você registra, e os passos que o app lê do celular (seção 4), fica salvo em um banco de dados local (SQLite) no seu aparelho. O app não tem conta, login nem servidor próprio. Ele não envia seus registros nem seus passos para a Team Guima nem para o YouTube. Os vídeos usam a internet (seção 7).</p>
     </section>
     <section id="pt-2">
-      <h3>2. Não coletamos dados.</h3>
-      <p>A Team Guima não recebe, armazena, vende nem compartilha seus dados. O app não usa SDKs de anúncios, de analytics nem de rastreamento.</p>
+      <h3>2. A Team Guima não recebe seus dados.</h3>
+      <p>A Team Guima não recebe, não guarda, não vende e não compartilha seus dados. O app não tem SDKs de anúncios nem de analytics. A exceção é o player do YouTube nos vídeos: quando você escolhe assistir, o YouTube (Google) recebe alguns dados. A seção 7 explica quais.</p>
     </section>
     <section id="pt-3">
       <h3>3. Lembretes.</h3>
       <p>Se você ativar os lembretes, o app agenda notificações locais no próprio aparelho. Nada é enviado para servidores. No Android, o app pede permissão para mostrar notificações; você pode desativar os lembretes a qualquer momento.</p>
     </section>
     <section id="pt-4">
-      <h3>4. Backup.</h3>
+      <h3>4. Passos (opcional).</h3>
       <ul>
-        <li><strong>Android:</strong> o backup automático do sistema e a transferência entre aparelhos estão desativados para os dados do app. Se você desinstalar o app ou limpar os dados dele, os registros são apagados de forma definitiva.</li>
-        <li><strong>iPhone:</strong> se o backup do iCloud ou do computador estiver ativado no seu aparelho, os dados do app podem ser incluídos nesse backup, que é feito pela Apple e controlado por você nos ajustes do iPhone. A Team Guima não tem acesso a esse backup.</li>
+        <li><strong>O que o app lê:</strong> só a contagem de passos por dia, contada pelo próprio celular. O app não lê localização, GPS, distância nem calorias.</li>
+        <li><strong>Como:</strong> no Android, pela Recording API do Google Play services, com a permissão “Atividade física” (<code>ACTIVITY_RECOGNITION</code>). No iPhone, pelo Core Motion da Apple (Movimento e Preparo Físico), com a permissão “Movimento e Preparo Físico”. O app só pede a permissão depois que você toca em “Ativar passos” e vê uma explicação.</li>
+        <li><strong>Para quê:</strong> só para mostrar no app seus passos de hoje, sua meta diária e os últimos 7 dias.</li>
+        <li><strong>Quando:</strong> o celular conta os passos em segundo plano (no Android, o Google Play services, depois que você ativa; no iPhone, o próprio sistema). O app só lê esses números quando está aberto: os de até 10 dias atrás no Android e até 7 dias no iPhone.</li>
+        <li><strong>Onde ficam:</strong> no aparelho, num banco de dados do app separado dos seus outros registros. O app guarda os passos de cada dia por até 90 dias e depois apaga sozinho; antes disso, você pode apagar quando quiser (veja abaixo). A Recording API funciona sem conta Google e guarda os dados no aparelho.</li>
+        <li><strong>Backup:</strong> os passos entram no arquivo de backup que você salva em Configurações › Backup e dados, como os outros registros. Eles não entram no backup automático do sistema: no Android, nenhum dado do app entra; no iPhone, o app tira os passos do backup do iCloud e do computador, mesmo que o resto dos seus registros entre (seção 5).</li>
+        <li><strong>Não são enviados</strong> para a Team Guima, para o YouTube nem para anunciantes, e não entram no relatório para IA (seção 6).</li>
+        <li><strong>É opcional:</strong> o resto do app funciona sem os passos.</li>
+        <li><strong>Ocultar o card</strong> (no ⋮ do card ou em Configurações › Tela inicial › Mostrar card de passos) faz o app parar de ler os passos, mas <strong>não tira a permissão</strong>. O celular pode continuar contando. Se você mostrar o card de novo, o app pode ler os passos dos últimos dias que o celular contou nesse tempo.</li>
+        <li><strong>Para tirar a permissão:</strong> no Android, em Configurações do celular › Apps › Diário Team Guima › Permissões › Atividade física. No iPhone, em Ajustes › Privacidade e Segurança › Movimento e Preparo Físico. Tirar a permissão interrompe a leitura, mas não apaga os passos que já estão no app. No Android, o app não cancela a gravação no Google Play services quando você tira a permissão; para isso, use Apagar todos os dados.</li>
+        <li><strong>Para apagar:</strong> Configurações › Backup e dados › Apagar todos os dados apaga os passos guardados no app. No Android, também interrompe a gravação no Google Play services e descarta o que ele tinha guardado para o app. No iPhone, a contagem do Movimento e Preparo Físico é do próprio sistema e não é apagada pelo app. Desinstalar o app também apaga os passos guardados nele. No Android, se você desinstalar sem usar Apagar todos os dados antes, o Google Play services pode continuar com os passos que contou, e o app não tem mais como apagá-los.</li>
+        <li><strong>Base legal:</strong> a contagem de passos pode ser considerada dado pessoal sensível de saúde. O app só lê com o seu consentimento específico e destacado, dado ao tocar em “Ativar passos” depois da explicação e ao permitir no sistema (LGPD, art. 11, I). Você pode retirar esse consentimento a qualquer momento, como explicado acima.</li>
       </ul>
     </section>
     <section id="pt-5">
-      <h3>5. Analisar com IA (opcional, iniciado por você).</h3>
+      <h3>5. Backup.</h3>
+      <ul>
+        <li><strong>Android:</strong> o backup automático do sistema e a transferência entre aparelhos estão desativados para os dados do app. Se você desinstalar o app ou limpar os dados dele, os registros são apagados de forma definitiva.</li>
+        <li><strong>iPhone:</strong> se o backup do iCloud ou do computador estiver ativado no seu aparelho, seus registros (água, treino, dieta, contadores e refeições livres) e as configurações do app podem entrar nesse backup, que é feito pela Apple e controlado por você nos ajustes do iPhone. A Team Guima não tem acesso a esse backup. Os passos ficam fora: o app tira os passos do backup do iCloud e do computador. Para levar os passos para outro aparelho, salve um arquivo de backup em Configurações › Backup e dados.</li>
+        <li><strong>Arquivo de backup:</strong> você também pode salvar um arquivo de backup em Configurações › Backup e dados. O arquivo tem seu histórico de saúde (água, treino, dieta, contadores, refeições livres e passos) e não tem senha. Quem tiver o arquivo consegue ler. Guarde num lugar seguro. Quem envia o arquivo é você.</li>
+      </ul>
+    </section>
+    <section id="pt-6">
+      <h3>6. Analisar com IA (opcional, iniciado por você).</h3>
       <ul>
         <li>No Histórico de 30 dias, você pode exportar um relatório com seus últimos 30 dias: totais e detalhe por dia de treino, dieta, água, contadores e o texto que você escreveu nas refeições livres.</li>
         <li>Antes de copiar, o app pede sua confirmação. Ao confirmar, o relatório e um pedido de análise (prompt) vão para a <strong>área de transferência</strong> do seu aparelho.</li>
@@ -76,53 +95,99 @@
         <li>Esses serviços têm idade mínima e termos próprios.</li>
       </ul>
     </section>
-    <section id="pt-6">
-      <h3>6. Saúde.</h3>
-      <p>O FitTracker serve para acompanhar hábitos. Ele não faz diagnóstico nem tratamento e não substitui um profissional de saúde. As respostas das IAs de terceiros não são revisadas pela Team Guima.</p>
-    </section>
     <section id="pt-7">
-      <h3>7. Idade mínima.</h3>
-      <p>O FitTracker é destinado a maiores de 18 anos e não é direcionado a crianças nem a adolescentes.</p>
+      <h3 id="pt-videos">7. Vídeos da Team Guima (YouTube).</h3>
+      <ul>
+        <li>Os vídeos do app usam os <strong>YouTube API Services</strong>: o player do YouTube, embutido no app, toca vídeos escolhidos pela Team Guima.</li>
+        <li>O vídeo só carrega quando você toca nele. Na primeira vez, o app mostra um aviso, e o vídeo só carrega se você tocar em “Assistir aqui”. Fechar o aviso de outro jeito (arrastar, tocar fora ou voltar) é o mesmo que “Cancelar”: o vídeo não carrega.</li>
+        <li>Ao tocar em “Assistir aqui”, você concorda com os <a href="https://www.youtube.com/t/terms" rel="noopener">Termos de Serviço do YouTube</a> e com esta política.</li>
+        <li>Ao carregar e tocar o vídeo, o YouTube (Google) recebe:
+          <ul>
+            <li>seu endereço IP e dados técnicos do aparelho e do navegador do app (como o user agent);</li>
+            <li>um identificador guardado no aparelho;</li>
+            <li>dados de uso do player (o que foi assistido, por quanto tempo e a qualidade da reprodução);</li>
+            <li>sua localização aproximada, que o Google pode deduzir do seu IP (por exemplo, para ver se o vídeo pode tocar na sua região).</li>
+          </ul>
+        </li>
+        <li>O Google usa esses dados para tocar o vídeo, ver se ele pode tocar na sua região, medir audiência e qualidade e evitar fraude e abuso.</li>
+        <li>O YouTube pode gravar cookies e outros dados (armazenamento local) no seu aparelho.</li>
+        <li>O conteúdo do player é servido pelo YouTube, que pode exibir anúncios conforme as regras dele. A Team Guima não escolhe nem recebe dados desses anúncios.</li>
+        <li>A Team Guima não recebe esses dados. Seus registros do app (água, treino, dieta, refeições livres, contadores e passos) nunca são enviados ao YouTube.</li>
+        <li>Esses dados ficam com o Google e seguem a <a href="https://policies.google.com/privacy" rel="noopener">Política de Privacidade do Google</a>.</li>
+        <li><strong>Como desfazer sua escolha:</strong> em Configurações › Sobre › Mostrar de novo o aviso dos vídeos. Seus registros não são apagados, e o aviso aparece antes do próximo vídeo.</li>
+        <li><strong>Se preferir não usar o player</strong>, toque em “Abrir no YouTube” no aviso antes do vídeo (para ver o aviso de novo: Configurações › Sobre › Mostrar de novo o aviso dos vídeos): o vídeo abre fora do app, no app do YouTube ou no navegador, e aí valem as regras do YouTube.</li>
+      </ul>
     </section>
     <section id="pt-8">
-      <h3>8. Seus direitos (LGPD).</h3>
-      <p>Como não coletamos dados, não temos dados seus para acessar, corrigir ou excluir. Você controla tudo no aparelho: pode editar os registros no app e apagar todos os dados limpando os dados do app (Android) ou desinstalando o app. Ao remover um contador, ele deixa de aparecer no app, no histórico e no relatório, mas os registros dele continuam guardados no aparelho até você limpar os dados do app ou desinstalá-lo. Para dados que você colou em uma IA, procure o serviço correspondente.</p>
+      <h3>8. Saúde.</h3>
+      <p>O Diário Team Guima serve para acompanhar hábitos. Ele não faz diagnóstico nem tratamento e não substitui um profissional de saúde. As respostas das IAs de terceiros não são revisadas pela Team Guima.</p>
     </section>
     <section id="pt-9">
-      <h3>9. Mudanças.</h3>
-      <p>Se esta política mudar, vamos atualizar a data acima e o texto nesta página.</p>
+      <h3>9. Idade mínima.</h3>
+      <p>O Diário Team Guima é destinado a maiores de 18 anos e não é direcionado a crianças nem a adolescentes. O YouTube tem idade mínima e termos próprios.</p>
     </section>
     <section id="pt-10">
-      <h3>10. Contato.</h3>
-      <p><a href="mailto:rmrlabzz@gmail.com">rmrlabzz@gmail.com</a></p>
+      <h3>10. Seus direitos (LGPD).</h3>
+      <p>A Team Guima não tem dados seus para acessar, corrigir ou excluir. Para apagar seus registros e os passos guardados no app, use <strong>Configurações › Backup e dados › Apagar todos os dados</strong> ou desinstale o app. Para parar a leitura dos passos, tire a permissão nas configurações do celular (seção 4); os passos que já estão no app são apagados sozinhos depois de 90 dias, ou antes, com Apagar todos os dados ou desinstalando. Desinstalar também apaga os cookies e os dados que o player do YouTube guardou no aparelho. Ao remover um contador, ele some do app, do histórico e do relatório, mas os registros dele continuam no aparelho até você usar Apagar todos os dados ou desinstalar o app. Os dados que o YouTube recebeu ficam com o Google e seguem a <a href="https://policies.google.com/privacy" rel="noopener">Política de Privacidade do Google</a>. Os dados enviados ao YouTube quando você assiste a um vídeo no app dependem do seu consentimento, dado ao tocar em “Assistir aqui” (LGPD, art. 7º, I). Você pode retirar esse consentimento a qualquer momento: basta não tocar nos vídeos ou usar Configurações › Sobre › Mostrar de novo o aviso dos vídeos. O Google pode tratar esses dados fora do Brasil, conforme a política dele. A leitura dos passos depende do seu consentimento, dado ao tocar em “Ativar passos” e ao permitir no sistema (LGPD, art. 11, I); você pode retirá-lo a qualquer momento nas configurações do celular. Para exercer os direitos do art. 18 da LGPD ou tirar dúvidas, fale com o controlador pelo e-mail da seção 12. Para os dados que já estão com o Google, use as ferramentas indicadas na Política de Privacidade do Google.</p>
+    </section>
+    <section id="pt-11">
+      <h3>11. Mudanças.</h3>
+      <p>Se esta política mudar, vamos atualizar a data acima e o texto nesta página. Se a mudança afetar os dados enviados a terceiros, o app vai pedir sua confirmação de novo.</p>
+    </section>
+    <section id="pt-12">
+      <h3>12. Contato e controlador dos dados.</h3>
+      <p>O controlador, nos termos da LGPD (Lei 13.709/2018, art. 9º), é Rafael Rabelo, pessoa física, responsável pelo app. Como explicado acima, ele não recebe seus registros: eles ficam no seu aparelho. Os dados recebidos pelo YouTube são tratados pelo Google (seção 7). Fale com ele pelo e-mail <a href="mailto:rmrlabzz@gmail.com">rmrlabzz@gmail.com</a>, o mesmo canal de suporte do app.</p>
+    </section>
+    <section id="pt-13">
+      <h3>13. Termos de uso.</h3>
+      <p>Ao usar o Diário Team Guima, você concorda com estes termos. Ao assistir aos vídeos no app, você também concorda com os <a href="https://www.youtube.com/t/terms" rel="noopener">Termos de Serviço do YouTube</a>.</p>
     </section>
     </article>
 
-    <article id="en" lang="en">
-    <h2>Privacy Policy — FitTracker</h2>
-    <p class="updated">Last updated: October 19, 2026</p>
-      <p>FitTracker is an app by Team Guima (<code>com.teamguima.fittracker</code>) for tracking habits: water, workouts, diet, flex meals and trackers you create.</p>
+    <article lang="en">
+    <h2 id="en">Privacy policy — Team Guima Journal</h2>
+    <p class="updated">Last updated: November 20, 2026</p>
+      <p>Team Guima Journal (<code>com.teamguima.fittracker</code>) is a Team Guima app, published by Rafael Rabelo as an individual, for tracking habits: water, workouts, diet, flex meals, trackers you create and steps. It also has Team Guima videos.</p>
+      <p>The app was formerly called FitTracker.</p>
     <section id="en-1">
-      <h3>1. Your data stays on your device.</h3>
-      <p>Everything you log is stored in a local database (SQLite) on your device. FitTracker has no account, login or servers of its own, and does not send your records to Team Guima.</p>
+      <h3>1. Your records stay on your device.</h3>
+      <p>Everything you log, and the steps the app reads from your phone (section 4), is stored in a local database (SQLite) on your device. The app has no account, login or servers of its own. It does not send your records or steps to Team Guima or to YouTube. The videos use the internet (section 7).</p>
     </section>
     <section id="en-2">
-      <h3>2. We do not collect data.</h3>
-      <p>Team Guima does not receive, store, sell or share your data. The app uses no advertising, analytics or tracking SDKs.</p>
+      <h3>2. Team Guima does not receive your data.</h3>
+      <p>Team Guima does not receive, store, sell or share your data. The app has no advertising or analytics SDKs. The exception is the YouTube player in the videos: when you choose to watch, YouTube (Google) receives some data. Section 7 explains what.</p>
     </section>
     <section id="en-3">
       <h3>3. Reminders.</h3>
       <p>If you turn on reminders, the app schedules local notifications on your device. Nothing is sent to any server. On Android, the app asks for permission to show notifications; you can turn reminders off at any time.</p>
     </section>
     <section id="en-4">
-      <h3>4. Backup.</h3>
+      <h3>4. Steps (optional).</h3>
       <ul>
-        <li><strong>Android:</strong> automatic system backup and device-to-device transfer are turned off for the app's data. If you uninstall the app or clear its data, your records are permanently deleted.</li>
-        <li><strong>iPhone:</strong> if iCloud or computer backup is turned on for your device, the app's data may be included in that backup, which is made by Apple and controlled by you in your iPhone settings. Team Guima has no access to that backup.</li>
+        <li><strong>What the app reads:</strong> only your daily step count, counted by your phone. The app does not read location, GPS, distance or calories.</li>
+        <li><strong>How:</strong> on Android, through Google Play services' Recording API, with the “Physical activity” permission (<code>ACTIVITY_RECOGNITION</code>). On iPhone, through Apple's Core Motion (Motion &amp; Fitness), with the “Motion &amp; Fitness” permission. The app only asks for permission after you tap “Turn On Steps” and see an explanation.</li>
+        <li><strong>What for:</strong> only to show your steps today, your daily goal and the last 7 days in the app.</li>
+        <li><strong>When:</strong> your phone counts steps in the background (on Android, Google Play services, after you turn it on; on iPhone, the system itself). The app only reads these numbers while it's open: up to the last 10 days on Android and 7 days on iPhone.</li>
+        <li><strong>Where they're stored:</strong> on your device, in a separate app database from your other records. The app keeps each day's steps for up to 90 days and then deletes them automatically; you can delete them sooner at any time (see below). The Recording API works without a Google account and stores data on the device.</li>
+        <li><strong>Backup:</strong> steps are included in the backup file you save in Settings › Backup &amp; Data, like your other records. They're not included in the system's automatic backup: on Android, none of the app's data is; on iPhone, the app excludes your steps from iCloud and computer backups, even if the rest of your records are included (section 5).</li>
+        <li><strong>They're not sent</strong> to Team Guima, to YouTube or to advertisers, and they're not included in the AI report (section 6).</li>
+        <li><strong>It's optional:</strong> the rest of the app works without steps.</li>
+        <li><strong>Hiding the card</strong> (in the card's ⋮ menu or in Settings › Home Screen › Show Steps Card) stops the app from reading your steps, but <strong>does not remove the permission</strong>. Your phone may keep counting. If you show the card again, the app may read the steps your phone counted in recent days.</li>
+        <li><strong>To remove the permission:</strong> on Android, go to your phone's Settings › Apps › Team Guima Journal › Permissions › Physical activity. On iPhone, go to Settings › Privacy &amp; Security › Motion &amp; Fitness. Removing the permission stops reading, but doesn't delete the steps already in the app. On Android, the app doesn't cancel recording in Google Play services when you remove the permission; to do that, use Delete All Data.</li>
+        <li><strong>To delete:</strong> Settings › Backup &amp; Data › Delete All Data deletes the steps stored in the app. On Android, it also stops recording in Google Play services and discards what it had stored for the app. On iPhone, the Motion &amp; Fitness count belongs to the system and isn't deleted by the app. Uninstalling the app also deletes the steps stored in it. On Android, if you uninstall without using Delete All Data first, Google Play services may keep the steps it counted, and the app can no longer delete them.</li>
+        <li><strong>Legal basis:</strong> your step count may be considered sensitive health data under Brazil's LGPD. The app only reads it with your specific and highlighted consent, given when you tap “Turn On Steps” after the explanation and allow it in the system (LGPD, art. 11, I). You can withdraw this consent at any time, as explained above.</li>
       </ul>
     </section>
     <section id="en-5">
-      <h3>5. Analyze with AI (optional, started by you).</h3>
+      <h3>5. Backup.</h3>
+      <ul>
+        <li><strong>Android:</strong> automatic system backup and device-to-device transfer are turned off for the app's data. If you uninstall the app or clear its data, your records are permanently deleted.</li>
+        <li><strong>iPhone:</strong> if iCloud or computer backup is turned on for your device, your records (water, workouts, diet, trackers and flex meals) and the app's settings may be included in that backup, which is made by Apple and controlled by you in your iPhone settings. Team Guima has no access to that backup. Steps are left out: the app excludes your steps from iCloud and computer backups. To move your steps to another device, save a backup file in Settings › Backup &amp; Data.</li>
+        <li><strong>Backup file:</strong> you can also save a backup file in Settings › Backup &amp; Data. The file contains your health history (water, workouts, diet, trackers, flex meals and steps) and has no password. Anyone with the file can read it. Keep it somewhere safe. You are the one who sends the file.</li>
+      </ul>
+    </section>
+    <section id="en-6">
+      <h3>6. Analyze with AI (optional, started by you).</h3>
       <ul>
         <li>From the 30-day history, you can export a report of your last 30 days: totals and a day-by-day breakdown of workouts, diet, water, trackers and the text you entered for flex meals.</li>
         <li>The app asks you to confirm before copying. Once you confirm, the report and an analysis request (prompt) are copied to your device <strong>clipboard</strong>.</li>
@@ -140,25 +205,52 @@
         <li>These services have their own minimum age and terms.</li>
       </ul>
     </section>
-    <section id="en-6">
-      <h3>6. Health.</h3>
-      <p>FitTracker is for tracking habits. It does not diagnose or treat any condition and is not a substitute for a health professional. Third-party AI responses are not reviewed by Team Guima.</p>
-    </section>
     <section id="en-7">
-      <h3>7. Minimum age.</h3>
-      <p>FitTracker is intended for users aged 18 and over and is not directed at children or teenagers.</p>
+      <h3 id="en-videos">7. Team Guima videos (YouTube).</h3>
+      <ul>
+        <li>The app's videos use <strong>YouTube API Services</strong>: the YouTube player, embedded in the app, plays videos chosen by Team Guima.</li>
+        <li>A video only loads when you tap it. The first time, the app shows a notice, and the video only loads if you tap “Watch Here”. Closing the notice any other way (swiping down, tapping outside or going back) is the same as “Cancel”: the video doesn't load.</li>
+        <li>By tapping “Watch Here”, you agree to the <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a> and to this policy.</li>
+        <li>When the video loads and plays, YouTube (Google) receives:
+          <ul>
+            <li>your IP address and technical data about your device and the app's browser (such as the user agent);</li>
+            <li>an identifier stored on your device;</li>
+            <li>player usage data (what was watched, for how long and playback quality);</li>
+            <li>your approximate location, which Google may infer from your IP address (for example, to check whether the video can play in your region).</li>
+          </ul>
+        </li>
+        <li>Google uses this data to play the video, check whether it can play in your region, measure views and quality, and prevent fraud and abuse.</li>
+        <li>YouTube may store cookies and other data (local storage) on your device.</li>
+        <li>The player's content is served by YouTube, which may show ads under its own rules. Team Guima does not choose these ads or receive data from them.</li>
+        <li>Team Guima does not receive this data. Your app records (water, workouts, diet, flex meals, trackers and steps) are never sent to YouTube.</li>
+        <li>This data is held by Google and is subject to the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</li>
+        <li><strong>How to undo your choice:</strong> in Settings › About › Show the Video Notice Again. Your records are not deleted, and the notice shows before your next video.</li>
+        <li><strong>If you'd rather not use the player</strong>, tap “Open in YouTube” in the notice before the video (to see the notice again: Settings › About › Show the Video Notice Again): the video opens outside the app, in the YouTube app or your browser, and YouTube's rules apply.</li>
+      </ul>
     </section>
     <section id="en-8">
-      <h3>8. Your rights.</h3>
-      <p>Since we collect no data, we hold none of your data to access, correct or delete. You control everything on your device: you can edit your records in the app, and delete all data by clearing the app's data (Android) or uninstalling the app. Removing a tracker hides it from the app, the history and the report, but its records stay on your device until you clear the app's data or uninstall the app. For data you pasted into an AI, contact that service.</p>
+      <h3>8. Health.</h3>
+      <p>Team Guima Journal is for tracking habits. It does not diagnose or treat any condition and is not a substitute for a health professional. Third-party AI responses are not reviewed by Team Guima.</p>
     </section>
     <section id="en-9">
-      <h3>9. Changes.</h3>
-      <p>If this policy changes, we will update the date above and the text on this page.</p>
+      <h3>9. Minimum age.</h3>
+      <p>Team Guima Journal is intended for users aged 18 and over and is not directed at children or teenagers. YouTube has its own minimum age and terms.</p>
     </section>
     <section id="en-10">
-      <h3>10. Contact.</h3>
-      <p><a href="mailto:rmrlabzz@gmail.com">rmrlabzz@gmail.com</a></p>
+      <h3>10. Your rights.</h3>
+      <p>Team Guima holds none of your data to access, correct or delete. To delete your records and the steps stored in the app, use <strong>Settings › Backup &amp; Data › Delete All Data</strong> or uninstall the app. To stop the app from reading steps, remove the permission in your phone's settings (section 4); steps already in the app are deleted automatically after 90 days, or sooner with Delete All Data or by uninstalling. Uninstalling also deletes the cookies and data the YouTube player stored on your device. When you remove a tracker, it disappears from the app, history and report, but its records stay on your device until you use Delete All Data or uninstall the app. Data YouTube has received is held by Google and is subject to the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>. Data sent to YouTube when you watch a video in the app relies on your consent, given when you tap “Watch Here” (LGPD, art. 7, I). You can withdraw it at any time: just don't tap the videos, or use Settings › About › Show the Video Notice Again. Google may process this data outside Brazil, under its own policy. Reading your steps relies on your consent, given when you tap “Turn On Steps” and allow it in the system (LGPD, art. 11, I); you can withdraw it at any time in your phone's settings. To exercise your rights under art. 18 of the LGPD or ask questions, contact the controller at the email in section 12. For data already held by Google, use the tools described in the Google Privacy Policy.</p>
+    </section>
+    <section id="en-11">
+      <h3>11. Changes.</h3>
+      <p>If this policy changes, we will update the date above and the text on this page. If a change affects the data sent to third parties, the app will ask you to confirm again.</p>
+    </section>
+    <section id="en-12">
+      <h3>12. Contact and data controller.</h3>
+      <p>The controller, under Brazil's LGPD (Law 13,709/2018, art. 9), is Rafael Rabelo, as an individual, who is responsible for the app. As explained above, he does not receive your records: they stay on your device. Data received by YouTube is processed by Google (section 7). You can reach him at <a href="mailto:rmrlabzz@gmail.com">rmrlabzz@gmail.com</a>, the app's support channel.</p>
+    </section>
+    <section id="en-13">
+      <h3>13. Terms of use.</h3>
+      <p>By using Team Guima Journal, you agree to these terms. By watching the videos in the app, you also agree to the <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a>.</p>
     </section>
     </article>
 
